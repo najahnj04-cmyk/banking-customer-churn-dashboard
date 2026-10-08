@@ -342,7 +342,7 @@ model_features = [
     "Tenure",
     "Balance",
     "Number Of Products",
-    "Has Cr Card",
+    "Has CR Card",
     "Is Active Member",
     "Estimated Salary"
 ]
@@ -361,7 +361,7 @@ numeric_features = [
     "Tenure",
     "Balance",
     "Number Of Products",
-    "Has Cr Card",
+    "Has CR Card",
     "Is Active Member",
     "Estimated Salary"
 ]
@@ -513,7 +513,7 @@ if predict_button:
             "Tenure": [input_tenure],
             "Balance": [input_balance],
             "Number Of Products": [input_products],
-            "Has Cr Card": [
+            "Has CR Card": [
                 1 if input_card == "Yes" else 0
             ],
             "Is Active Member": [
@@ -668,7 +668,7 @@ scenario_customer = pd.DataFrame(
         "Tenure": [5],
         "Balance": [scenario_balance],
         "Number Of Products": [scenario_products],
-        "Has Cr Card": [1],
+        "Has CR Card": [1],
         "Is Active Member": [
             1 if scenario_active == "Yes" else 0
         ],
