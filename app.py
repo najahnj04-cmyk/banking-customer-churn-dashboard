@@ -87,7 +87,6 @@ churn_rate = (
 )
 
 average_balance = filtered_df["Balance"].mean()
-average_salary = filtered_df["Estimated Salary"].mean()
 
 col1, col2, col3, col4 = st.columns(4)
 
