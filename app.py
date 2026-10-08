@@ -232,7 +232,7 @@ col1, col2 = st.columns(2)
 with col1:
 
     product_churn = (
-        filtered_df.groupby("Number Of Products")["Exited"]
+        filtered_df.groupby("Num Of Products")["Exited"]
         .mean()
         .mul(100)
         .reset_index()
