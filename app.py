@@ -26,7 +26,7 @@ st.set_page_config(
 
 @st.cache_data
 def load_data():
-    df = pd.read_csv("DOC-20260918-WA0020(1).csv")
+    df = pd.read_csv("European_Bank.csv")
     return df
 
 df = load_data()
