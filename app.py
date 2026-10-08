@@ -71,6 +71,7 @@ filtered_df = df[
     df["Geography"].isin(geographies)
     & df["Gender"].isin(genders)
 ]
+st.write("FILTERED COLUMNS:",filtered_df.columns.tolist())
 
 # ---------------------------------------------------------
 # KPI SECTION
