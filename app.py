@@ -36,6 +36,7 @@ df = load_data()
 # ---------------------------------------------------------
 
 df.columns = df.columns.str.strip()
+st.write("ACTUAL CSV COLUMNS:", df.columns.tolist())
 
 # ---------------------------------------------------------
 # TITLE
