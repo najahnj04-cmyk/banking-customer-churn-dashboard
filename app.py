@@ -36,7 +36,6 @@ df = load_data()
 # ---------------------------------------------------------
 
 df.columns = df.columns.str.strip()
-df = df.rename(columns={"Number of Products","Has CR Card":"Has Cr Card","Estimated Salary":"Estimated Salary"})
 
 # ---------------------------------------------------------
 # TITLE
