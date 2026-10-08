@@ -232,7 +232,7 @@ col1, col2 = st.columns(2)
 with col1:
 
     product_churn = (
-        filtered_df.groupby("Num Of Products")["Exited"]
+        filtered_df.groupby("Number Of Products")["Exited"]
         .mean()
         .mul(100)
         .reset_index()
@@ -241,7 +241,7 @@ with col1:
     fig, ax = plt.subplots()
 
     ax.bar(
-        product_churn["Num Of Products"].astype(str),
+        product_churn["Number Of Products"].astype(str),
         product_churn["Exited"]
     )
 
@@ -316,7 +316,7 @@ st.dataframe(
             "Geography",
             "Age",
             "Balance",
-            "Num Of Products",
+            "Number Of Products",
             "Is Active Member",
             "Exited"
         ]
@@ -342,7 +342,7 @@ model_features = [
     "Age",
     "Tenure",
     "Balance",
-    "Num Of Products",
+    "Number Of Products",
     "Has Cr Card",
     "Is Active Member",
     "Estimated Salary"
@@ -361,7 +361,7 @@ numeric_features = [
     "Age",
     "Tenure",
     "Balance",
-    "Num Of Products",
+    "Number Of Products",
     "Has Cr Card",
     "Is Active Member",
     "Estimated Salary"
@@ -513,7 +513,7 @@ if predict_button:
             "Age": [input_age],
             "Tenure": [input_tenure],
             "Balance": [input_balance],
-            "Num Of Products": [input_products],
+            "Number Of Products": [input_products],
             "Has Cr Card": [
                 1 if input_card == "Yes" else 0
             ],
@@ -668,7 +668,7 @@ scenario_customer = pd.DataFrame(
         "Age": [scenario_age],
         "Tenure": [5],
         "Balance": [scenario_balance],
-        "Num Of Products": [scenario_products],
+        "Number Of Products": [scenario_products],
         "Has Cr Card": [1],
         "Is Active Member": [
             1 if scenario_active == "Yes" else 0
